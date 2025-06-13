@@ -1,0 +1,21 @@
+def find_match(query: str, db: dict):
+    matching = []
+    for seq_id, sequence in db.items():   #items returns a view of objects!!!!
+        if query in sequence:
+            matching.append(seq_id)  #adds items at the end of the lst
+    return matching
+db = {
+  "seq001": "ATGCGGAATT",
+  "seq002": "CGTACGTAGC",
+  "seq003": "TTATGCATTA",
+  "seq004": "GGAATCCGTA",
+  "seq005": "CATGCCGTAGC",
+  "seq006": "GGGCGTGCAT",
+  "seq007": "AATGCTAGCTA",
+  "seq008": "CGCGATGCGC",
+  "seq009": "TATATATATA",
+  "seq010": "ATGCGGATGCA"
+}
+query = "ATGCGGAATT"
+result = find_match(query, db)
+print(result) 

@@ -1,0 +1,8 @@
+#write a python program to check wether the user given integer is even or odd using funcutions
+def check_even_odd(num):
+    if num % 2 == 0:
+        print(f"{num} is Even")
+    else:
+        print(f"{num} is Odd")
+
+check_even_odd(num)

@@ -1,0 +1,9 @@
+#funcution decleration
+def Display_progr():
+    #funcution defination
+    print("programming lanuage :")
+    print("c")
+    print("c++")
+    print("python")
+    #funcution calling
+Display_progr()

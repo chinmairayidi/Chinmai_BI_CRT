@@ -1,0 +1,10 @@
+def display():
+    return "may i come in!"
+Res=display()
+print(Res)
+
+def name_funcution(Res):
+    return "may i come in!"
+Res=name_funcution()
+print(Res)
+
