@@ -1,0 +1,53 @@
+'''
+seniario
+------------------------------------------------------------------------------------------
+you have participated in your collage coding fest which was there for 6 days
+
+TASK:
+write a python program to give the final report which includes
+1.Activities for the day including timeline
+2.number of teams/participants for the day
+3.project_names
+4.technologies used
+5.ppt demonstration given
+6.winner of the day
+7.runner up of the day
+8.best performer of the day
+9.host of the program for that day
+
+'''
+class coding_fest:
+    def __init__(self,day,activities,participants,project_name, technologies,ppt_demo,winner,runner_up,best_performer,host):
+        self.day = day
+        self.activities =activities
+        self.participants= participants
+        self.project_names= project_name
+        self.technologies =technologies
+        self.ppt_demo =ppt_demo
+        self.winner =winner
+        self.runner_up= runner_up
+        self.best_performer= best_performer
+        self.host =host
+
+    def display_report(self):
+        print(f"Day_report{self.day}        :")
+        print(f"Activities and Timeline     : {self.activities}")
+        print(f"Number of teams/participants: {self.participants}")
+        print(f"Project Names               : {','.join(self.project_names)}")
+        print(f"Technologies Used           : {','.join(self.technologies)}")
+        print(f"PPT Demonstration Given     : {'Yes' if self.ppt_demo else 'No'}")
+        print(f"Winner                      : {self.winner}")
+        print(f"Runner Up                   :{self.runner_up}")
+        print(f"Best Performer              :{self.best_performer}")
+        print(f"Host                              :{self.host}")
+        print("----------------------------------")
+coding_fest_data = [
+    coding_fest(1, "Inauguration_program (9AM), Hackathon(10AM),Presentation(3PM)",5,["Water_Monitor", "Health_Tracker"], ["Python","sql"],True,"Team_hackers", "Team_cyber", "Ananya", "Rahul"),
+    coding_fest(2, "Inauguration_program (9AM), Hackathon(10AM),Presentation(3PM)",5,["Water_Monitor", "Health_Tracker"], ["Python","sql"],True,"Team_hackers", "Team_cyber", "Ananya", "Rahul"),
+    coding_fest(3, "Inauguration_program (9AM), Hackathon(10AM),Presentation(3PM)",5,["Water_Monitor", "Health_Tracker"], ["Python","sql"],True,"Team_hackers", "Team_cyber", "Ananya", "Rahul"),
+    coding_fest(4, "Inauguration_program (9AM), Hackathon(10AM),Presentation(3PM)",5,["Water_Monitor", "Health_Tracker"], ["Python","sql"],True,"Team_hackers", "Team_cyber", "Ananya", "Rahul"),
+    coding_fest(5, "Inauguration_program (9AM), Hackathon(10AM),Presentation(3PM)",5,["Water_Monitor", "Health_Tracker"], ["Python","sql"],True,"Team_hackers", "Team_cyber", "Ananya", "Rahul"),
+    coding_fest(6, "Inauguration_program (9AM), Hackathon(10AM),Presentation(3PM)",5,["Water_Monitor", "Health_Tracker"], ["Python","sql"],True,"Team_hackers", "Team_cyber", "Ananya", "Rahul"),
+]
+for report in coding_fest_data:
+    report.display_report()
