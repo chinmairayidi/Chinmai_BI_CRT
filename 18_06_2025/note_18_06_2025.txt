@@ -1,0 +1,193 @@
+Object  Oriented Progrsming System(OOP'S)
+
+Inheritence
+Polymorphism
+Encapsulation
+Abstraction
+
+
+
+entity :- anythging which has existence
+
+CLASS: it is collection of logical entity or blueprint or plan
+        multiple objects created using same class is known as identical objects
+
+OBJECTS:it is a real world physical entity 
+        it is also known as instance
+
+the class name can be any valid identifier
+it can not be python reserved word 
+a valid class ke name starts eith a letter followed by any number of letters,numbers and underscores
+a class name generally starts with a CAPITAL letter
+
+TO CREATE A CLASS:-
+ we use class key word .
+SYNTAX:
+    object_name=class_name()
+    object_name=class_name(arg)
+
+types of constructor:
+parameterised
+non-parameterised
+->Python supports special Type of Method called Constructor for initialising the Instance variable of a class
+ ->A Constructor is only called once at the time of creating an Instance 
+ ->If two Instances are created for a class,the Constructor will be called once for each Instance. 
+ ->A class Constructor,if defined is called whenever a program creates an Object of that class.
+
+PARAMETERIZED:
+1)Parameterized Constructor: These are ones which have parameters(other than self) defined in the _ intit_ wethod's parameter Iit.
+ -->This type of Constructor can take arguments from the user. 
+2)Non-Parameterized Constructor:Also known as Default Constructor 
+ -->The init method includes a single parameter self 
+ -->NO other parameters are present init_ I'S parameter list 
+ "->Consequently, this Constructor takes "no arguments" while creating a new object "
+ ->Non-Parameterized Constructors assign Default values to the attributes of the class. I
+
+__init__() method(magic method,dumdar method):
+which is used to initialize the variables for the class
+every class has __init__ and this is excutede with a  instantiate in the class 
+you can also use this method to do anything you want to do when the object is created 
+we do call this method explicity.
+
+SELF :
+self is a default variable that contains the memory adress of the current objects
+this variable is used to refer all the  inatans variable and method.
+when we create object of a class,the object name contains the memory location of the object  
+
+OBJECTS have two different charecters:- 1.states --the properties or atributes of an object 
+                                        represented --->DataMembers
+                                        2.behaviours--the functionality or work done by the object
+                                        represented--->functions/methods
+
+
+w.a..p.p to create a mobile class and declare the states of mobile as colour,prize,brand,series,version,features,storage,battery capacity,processor create
+10 objects and initialise using constructor print details of the individual objects ushong function.
+
+you have attended a skill development training program for 15 days on python programing language 
+TASK:
+write a python program to give detailed report of 15 days python training whiich includes 
+1.days
+2.topic covered
+3.efficiency(rate of efficiemcy &grip on topic learnt on scale of 5)
+4.numbeer of assignment questions solved
+5.number of hacker rank questions solved
+6.ratings achived in hacker rank on particular day 
+7.certifications completed(include name of certificate)
+8.duration of class
+9.rate the session on scale of 5 whenever
+        -->1-being worst
+        -->2.being brand
+        -->3.being average
+        -->4.being good
+        -->5.being best
+
+
+you have participate in collage _level coding fest which was there for 6 days 
+TASK:
+write pyrhon program to give the final report which includes:
+1.activities for the day include time line 
+2.no.of teams/participans for the day
+3.projrct_names
+4.technologies used
+5.ppt demonstartions given 
+6.winner of the day
+7.runner up of the day
+8.best performer of the day
+9.host of the program for the day
+
+type of methods:-
+        ------>instance metho 
+                        -accesor method 
+                        -mutator method
+        ------->class method
+        ------->static methods
+
+INSTANCE METHOD :-
+-------------------
+ACCESOR METHOD:- used to access or read and modify the data of the variable 
+MUTATOR METHOD:-  used to access or read and modify the data of the variable
+                also called as settor method 
+                this method modify the data in the variables
+                EG: def set_value(self)
+                        def set_result(self)
+                        def set_name(self)
+                        def set_id(self)
+
+write a py program to create a product class declare the states of the class as productname, productid, price,GST,mfdate,expdate
+1) Create 5 objects initialize it using parameterized constructor and access them using instance method 
+2) Declare mutator methods as set.objects given and change the values of their properties using mutators methods and print
+
+w.a.p.p to a rectangle class and intialise the variable length and breadth using constructor and acess the values using mutator methods 
+
+Destructors: The _del_ method is called Destructor.It is called when an object is about to be deleted.
+Syntax ->
+class Dog:
+        def _del_(self):
+                print(f"{self.name} is being destroyed.")
+Class Methods  : Which Act upon the class variables or Static variable of the class.
+                By Default,the first parameter of the class method is cls which refers to the class itself.
+Static Methods : Used when some processing is related to the class but does not need the class or its Instances to perform any work
+                We use this method when we want to pass some values from outside and perform some action in the method.
+                Decorator @staticmethod need to write above the staticmethod.
+
+Global Variable : A variable which is declared within the class but outside of a 
+                  Method,Function,Constructor or Block is known as "GLOBAL VARIABLE".
+                  Global Variable has global scope where you can access the variable throughout the Program.
+                  It Has a Global Access.
+Local Variable : A variable which is declared within the class but inside of a 
+                  Method,Function,Constructor or Block is known as "LOCAL VARIABLE".
+                  Local Variable has Limited scope where you can access the variable within the given scope(either function or method or Constructor)
+                  It Has a Limited Access.
+
+
+#Write a python Program to create a Book Class declare the states as 
+#BookName,AuthorName,PublisherName,PublisherDate,CategoryofBook
+#1)Create 5 Objects and initialise the values using Constructor where 
+#   --Create 1st object using one parameterized constructor
+#   --Create 2nd object using Two parameterized constructor
+#   --Create 3rd object using zero parameterized constructor
+#   --Create 4th object using four parameterized constructor
+#   --Create 5th object using five parameterized constructor
+#2)Access the values using Accessor Methods
+#3)Update the values using Mutator method using name of the book
+
+
+#Write a Python Program to create a SquareShape Class & declare the property as 
+#length,breadth.height
+#1)Calculate the Area of Square
+#2)Check Whether the Sides of Square's are equal or not using Instance Methods
+#3)Calculate the Perimeter of Square using Instance Methods
+#4)Find the Diagonals of Square usng Instance Methods
+#5)Find the side length of Square using Instance Methods
+
+METHOD OVERLOADING:- within the same class having multiple methods  with same name but different parameters is
+                     called method OVERLOADING
+CONSTRUCTOR OVERLOADING:within the same class having multiple constructors with dsame name but different signatures 
+                        is called condtructor overloading.                    
+OPERATOR OVERLOADING:A Single Operator Performing Different Operations based on the datatype.
+
+
+INHERITENCE: it is the proicess of aquiring the properties of one class into another class.
+TYPES:- single , multilevel,multiple,hierarchial,hybrid
+SUPER CLASS : the class which gives the property to another class is known as super class/base classs/parent class
+SUB CLASS : The class which acquire the properties from another class is known  as sub class/ Derived class.
+1)Single Level : Vehicle(Superclass)----->Car(Subclass)
+2)Multiple Level: Vehicle(super class)--->Bike(Subclass)---->SuperBike(Subclass)
+INTERMEDIATE CLASS : class which acts as subclass and superclass
+
+POLYMORPHISM 
+Performing a Single Task in multiple ways is called as "Polymorphism"
+2 Types : 1)Compile time(Overloading)
+          2)Run Time(Overriding)
+
+Duck Typing : -> In python we follow a principle if it walks like a duck and talks like a duck it
+                must be a duck, which means python doesn't care about which class of object it is. If
+                it is an object and requires behaviour is present for the object then it will work.
+                The type of object is distinguished only at runtime this is called as DUCK TYPING.
+
+Abstraction : It is a process of hiding the implementation and providing the Functionalities to the user
+Interface : It is a Intermediate between Service and Consumer
+Encapsulation : It is a Process of Wrapping up the states and Behaviours of an Entity for Data security
+                and accessing it using Data Handler methods(Getter and Setter)
+Inheritance : Acquiring properties from one class to another classb
+ 
