@@ -1,0 +1,37 @@
+                                DATA STRUCTURES & ALGORITHMS
+                               ------------------------------                          
+DATA:- it is a raw fact which describes the attributes or properties of an entity.
+STRUCTURE:- it is a structured format of arrangimg the data .
+DATA STRUCTURES :- The process of organising the data .
+CRUD:- C -creation /insertion   
+       R -read/retrieve
+       U - update/modify
+       D - deletion/remove/
+ALGORITHM:- it is a step by step procedure to execute a task.        
+BIG-O NOTATION(O)-describes worst case scenario.
+OMEGA NOTATION- DESCRIBES BEST CASE scenario.
+THETA NOTATION- represents the average complecxity of an algorithm.
+LINKED LIST:-SINGLY LINKED LIST--contains only one link which points to the subsequent pointern
+             DOUBLY LINKED LIST--node points not only towards thr next pointer but also points to the previous 
+             CIRCULARLY LINKED LIST--the last pointer points toward the first node
+             DOUBLy CIRCULARLY LINKED LIST--head points tail &  tail points head
+
+
+Operations on Linked List:
+1)Traversing:✔ Follow the pointers
+             ✔ Display the contents of the nodes as they were traversed.
+             ✔ Stop when the next pointer points to None.
+
+2)Printing :  Traversing the list from begining of the list(head) until we reach the None Pointer
+
+3)Insertion : ✔ Before the Head of the begining
+              ✔ After the Tail
+              ✔ Middle of the List(Random Location)
+              
+4)Deletion : ✔ Deleting the First Node
+             ✔ Deleting the an Intermediate Node
+             ✔ Deleting the Last Node
+             
+
+
+W.A.P.P to create a linked list of size n (inpiut from user) 
